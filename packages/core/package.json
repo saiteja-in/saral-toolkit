@@ -1,0 +1,25 @@
+{
+  "name": "core",
+  "version": "0.0.0",
+  "description": "> TODO: description",
+  "author": "saiteja-in <vurukondasaiteja13@gmail.com>",
+  "homepage": "",
+  "license": "ISC",
+  "main": "dist/core.js",
+  "types": "dist/core.d.ts",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "test": "npx lerna run build --scope=core && jest",
+    "build": "tsc"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "typescript": "^5.8.3"
+  }
+}
