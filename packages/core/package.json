@@ -15,14 +15,16 @@
     "dist"
   ],
   "scripts": {
-    "test": "npx lerna run build --scope=core && jest",
+    "test": "npx lerna run build --scope=core-saral && jest",
     "build": "tsc"
   },
   "devDependencies": {
+    "@testing-library/react-hooks": "^8.0.1",
     "@types/jest": "^29.5.14",
     "@types/react": "^19.1.2",
     "@types/uuid": "^10.0.0",
     "jest": "^29.7.0",
+    "jest-environment-jsdom": "^29.7.0",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
     "ts-jest": "^29.3.2",

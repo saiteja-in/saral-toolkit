@@ -18,6 +18,15 @@ export class StorageUtil {
     }
   
     /**
+     * Check if a key starts with this storage's prefix
+     * @param key The key to check
+     * @returns True if the key has this storage's prefix
+     */
+    private hasPrefix(key: string): boolean {
+      return key.startsWith(`${this.prefix}:`);
+    }
+  
+    /**
      * Store data in localStorage
      * @param key The storage key
      * @param data The data to store
@@ -69,9 +78,30 @@ export class StorageUtil {
      */
     clear(): void {
       try {
-        if (typeof localStorage !== 'undefined') {
-          Object.keys(localStorage).forEach(key => {
-            if (key.startsWith(this.prefix)) {
+        if (typeof localStorage === 'undefined') return;
+        
+        // Method 1: If key and length are available (normal browser env)
+        if (typeof localStorage.key === 'function' && 'length' in localStorage) {
+          const keysToRemove: string[] = [];
+          
+          // First, collect all keys with our prefix
+          for (let i = 0; i < localStorage.length; i++) {
+            const key = localStorage.key(i);
+            if (key && this.hasPrefix(key)) {
+              keysToRemove.push(key);
+            }
+          }
+          
+          // Then remove them
+          keysToRemove.forEach(key => {
+            localStorage.removeItem(key);
+          });
+        } 
+        // Method 2: If we have access to the store object (for testing)
+        else if ('store' in localStorage) {
+          const store = (localStorage as any).store;
+          Object.keys(store).forEach(key => {
+            if (this.hasPrefix(key)) {
               localStorage.removeItem(key);
             }
           });
