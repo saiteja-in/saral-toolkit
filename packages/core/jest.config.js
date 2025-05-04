@@ -8,5 +8,6 @@ module.exports = {
       '**/__tests__/**/*.test.(ts|js)',
     ],
     moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx', 'json', 'node'],
+    testPathIgnorePatterns: ['/node_modules/', '/dist/__tests__/hooks.test.js'],
     setupFiles: ['<rootDir>/jest.setup.js'],
   };

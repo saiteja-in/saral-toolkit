@@ -1,4 +1,5 @@
-const {isOdd} = require("../dist/core.js");
+// Keep the original test file which tests isOdd
+const { isOdd } = require("../dist/core.js");
 
 test("isOdd", () => {
   expect(isOdd(1)).toBe(true);
