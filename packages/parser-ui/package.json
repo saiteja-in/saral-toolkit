@@ -11,6 +11,9 @@
     "lib": "lib",
     "test": "__tests__"
   },
+  "dependencies": {
+    "core":"*"
+  },
   "files": [
     "dist"
   ],
