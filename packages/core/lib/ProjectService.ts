@@ -18,7 +18,8 @@ export class ProjectService {
    * @returns Array of projects
    */
   getAllProjects(): Project[] {
-    return storage.getItem<Project[]>(this.storageKey, []) || [];
+    const projects = storage.getItem<Project[]>(this.storageKey, []) || [];
+    return projects.map(project => this.deserializeProject(project));
   }
 
   /**
@@ -296,5 +297,21 @@ export class ProjectService {
     project.updatedAt = new Date();
     
     return this.updateProject(projectId, project);
+  }
+
+  /**
+   * Helper method to deserialize project dates from JSON
+   * @param project The project to deserialize
+   * @returns Project with proper Date objects
+   */
+  private deserializeProject(project: any): Project {
+    if (!project) return project;
+
+    // Convert date strings back to Date objects
+    return {
+      ...project,
+      createdAt: project.createdAt instanceof Date ? project.createdAt : new Date(project.createdAt),
+      updatedAt: project.updatedAt instanceof Date ? project.updatedAt : new Date(project.updatedAt),
+    };
   }
 }
