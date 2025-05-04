@@ -1,7 +1,7 @@
 {
   "name": "core-saral",
   "version": "1.0.0",
-  "description": "> TODO: description",
+  "description": "Core components for Saral project management and configuration",
   "author": "saiteja-in <vurukondasaiteja13@gmail.com>",
   "homepage": "",
   "license": "ISC",
@@ -21,5 +21,8 @@
   "devDependencies": {
     "jest": "^29.7.0",
     "typescript": "^5.8.3"
+  },
+  "dependencies": {
+    "uuid": "^11.1.0"
   }
 }
