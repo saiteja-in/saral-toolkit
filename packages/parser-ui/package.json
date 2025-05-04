@@ -1,6 +1,6 @@
 {
   "name": "parser-ui",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "> TODO: description",
   "author": "saiteja-in <vurukondasaiteja13@gmail.com>",
   "homepage": "",
@@ -12,7 +12,7 @@
     "test": "__tests__"
   },
   "dependencies": {
-    "core":"*"
+    "core": "^1.0.0"
   },
   "files": [
     "dist"
