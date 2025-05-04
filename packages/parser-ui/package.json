@@ -1,0 +1,25 @@
+{
+  "name": "parser-ui",
+  "version": "0.0.0",
+  "description": "> TODO: description",
+  "author": "saiteja-in <vurukondasaiteja13@gmail.com>",
+  "homepage": "",
+  "license": "ISC",
+  "main": "dist/parser-ui.js",
+  "types": "dist/parser-ui.d.ts",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "test": "npx lerna run build --scope=parser-ui && jest"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "typescript": "^5.8.3"
+  }
+}
