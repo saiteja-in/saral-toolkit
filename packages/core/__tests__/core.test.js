@@ -1,5 +1,5 @@
 // Keep the original test file which tests isOdd
-const { isOdd } = require("../dist/core.js");
+const { isOdd } = require("../dist/core-saral.js");
 
 test("isOdd", () => {
   expect(isOdd(1)).toBe(true);
