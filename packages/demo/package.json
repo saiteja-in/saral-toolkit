@@ -3,6 +3,7 @@
   "version": "1.0.1",
   "description": "",
   "main": "index.js",
+  "private": true,
   "scripts": {
     "start": "webpack serve --mode development --open",
     "build": "webpack --mode production"
