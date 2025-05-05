@@ -1,6 +1,6 @@
 {
   "name": "parser-ui",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "UI components for document parsing and visualization",
   "author": "saiteja-in <vurukondasaiteja13@gmail.com>",
   "homepage": "",
@@ -16,7 +16,7 @@
     "react-dom": "^18.0.0"
   },
   "dependencies": {
-    "core-saral": "^1.0.0"
+    "core-saral": "^1.0.1"
   },
   "files": [
     "dist"
