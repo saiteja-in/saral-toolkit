@@ -3,29 +3,28 @@
 ![Saral Toolkit](https://img.shields.io/badge/Saral-Toolkit-blue)
 ![Version](https://img.shields.io/badge/version-1.0.1-orange)
 ![Last Updated](https://img.shields.io/badge/last%20updated-May%202025-brightgreen)
-<!-- Three images evenly spaced -->
-<div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 20px;">
+<!-- Three images in one row, centered with equal spacing -->
+<div style="display: flex; justify-content: center; align-items: center; gap: 20px;">
   <img src="docs/1.png" alt="Saral Core Demo" width="350" />
   <img src="docs/2.png" alt="Parser UI Demo" width="350" />
   <img src="docs/3.png" alt="Parser UI Demo" width="350" />
 </div>
 
-<!-- NPM package badges centered with even spacing -->
-<div style="display: flex; justify-content: space-around; align-items: center; flex-wrap: wrap; gap: 20px; margin-top: 1rem;">
+<!-- Two NPM package badges in one centered row -->
+<div style="display: flex; justify-content: center; align-items: center; gap: 40px; margin-top: 1.5rem;">
   <div style="text-align: center;">
     <a href="https://www.npmjs.com/package/core-saral">
-      <img src="https://img.shields.io/npm/v/core-saral?style=for-the-badge" alt="@saral/core">
+      <img src="https://img.shields.io/npm/v/core-saral?style=for-the-badge" alt="core-saral">
     </a>
     <div>core-saral</div>
   </div>
   <div style="text-align: center;">
     <a href="https://www.npmjs.com/package/parser-ui">
-      <img src="https://img.shields.io/npm/v/parser-ui?style=for-the-badge" alt="@saral/parser-ui">
+      <img src="https://img.shields.io/npm/v/parser-ui?style=for-the-badge" alt="parser-ui">
     </a>
     <div>parser-ui</div>
   </div>
 </div>
-
 
 
 ## 📚 Table of Contents
