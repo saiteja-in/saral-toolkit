@@ -8,8 +8,6 @@
   "devDependencies": {
     "lerna": "^8.2.2",
     "nx": "20.8.1"
-  },
-  "scripts":{
-    "prepack":"npx lerna run test"
   }
+
 }

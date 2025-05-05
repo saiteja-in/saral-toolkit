@@ -35,5 +35,6 @@
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
     "typescript": "^5.8.3"
-  }
+  },
+  "gitHead": "41840ee3066eb7d3995adcdbce8559ef9d8e81aa"
 }
