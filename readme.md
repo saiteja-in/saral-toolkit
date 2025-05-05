@@ -3,31 +3,29 @@
 ![Saral Toolkit](https://img.shields.io/badge/Saral-Toolkit-blue)
 ![Version](https://img.shields.io/badge/version-1.0.1-orange)
 ![Last Updated](https://img.shields.io/badge/last%20updated-May%202025-brightgreen)
-
-<div align="center">
-  <img src="docs/1.png" alt="Saral Core Demo" width="350" style="margin-right: 20px;" />
+<!-- Three images evenly spaced -->
+<div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 20px;">
+  <img src="docs/1.png" alt="Saral Core Demo" width="350" />
   <img src="docs/2.png" alt="Parser UI Demo" width="350" />
   <img src="docs/3.png" alt="Parser UI Demo" width="350" />
 </div>
 
-Saral Toolkit is a comprehensive frontend solution for building document processing and data extraction applications. It provides reusable React components for project management, document parsing, and feedback collection to streamline the development of document-processing workflows.
-
-## 📦 Published NPM Packages
-
-<div align="center">
-  <div style="display:inline-block; margin:0 10px; text-align:center;">
+<!-- NPM package badges centered with even spacing -->
+<div style="display: flex; justify-content: space-around; align-items: center; flex-wrap: wrap; gap: 20px; margin-top: 1rem;">
+  <div style="text-align: center;">
     <a href="https://www.npmjs.com/package/core-saral">
       <img src="https://img.shields.io/npm/v/core-saral?style=for-the-badge" alt="@saral/core">
     </a>
     <div>core-saral</div>
   </div>
-  <div style="display:inline-block; margin:0 10px; text-align:center;">
+  <div style="text-align: center;">
     <a href="https://www.npmjs.com/package/parser-ui">
       <img src="https://img.shields.io/npm/v/parser-ui?style=for-the-badge" alt="@saral/parser-ui">
     </a>
     <div>parser-ui</div>
   </div>
 </div>
+
 
 
 ## 📚 Table of Contents
